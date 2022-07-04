@@ -1,6 +1,5 @@
 import React from 'react';
 import AddExpense from './components/AddExpense';
-import img2 from './components/Gutu_Papa';
 import './style.css';
 
 export default function App() {
