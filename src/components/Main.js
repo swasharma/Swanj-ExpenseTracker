@@ -1,4 +1,5 @@
 import React from 'react';
+import AddExpense from './AddExpense';
 
 function Main({ title }) {
   return (
@@ -10,6 +11,9 @@ function Main({ title }) {
       <div className="card-content text-center">
         <h3>Total Balance</h3>
         <p>Try Saying Add Income for $100 in Catergory Salary for Monday</p>
+      </div>
+      <div className="card-content text-center">
+        <AddExpense />
       </div>
     </div>
   );

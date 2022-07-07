@@ -2,12 +2,25 @@ import React from 'react';
 
 function AddExpense() {
   return (
-    <div>
-      <h1>
-        I LOVE U PAPA <br /> I Miss You So Much <br />
-      </h1>
-      <h3 className="from-text">FROM : Your Gutu</h3>
-    </div>
+    <form>
+      <label>Type</label>
+      <select>
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+      </select>
+      <label>Catergory</label>
+      <select>
+        <option value="income">Bussiness</option>
+        <option value="expense">Salary</option>
+      </select>
+      <br />
+      <label>Amount</label>
+      <input type="number" />
+      <label>Date</label>
+      <input type="date" />
+      <br />
+      <button type="submit">Submit</button>
+    </form>
   );
 }
 

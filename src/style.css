@@ -7,6 +7,9 @@ body {
   height: 100%;
   width: 100%;
 }
+* {
+  box-sizing: border-box;
+}
 
 body {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
@@ -24,13 +27,22 @@ body {
 }
 
 .card {
-  height: 200px;
+  min-height: 200px;
   padding: 10px;
   background-color: white;
   box-shadow: 0 6px 6px rgb(16 27 30 / 40%);
   border-radius: 3px;
   color: #333;
   margin: auto 0;
+  height: auto;
+}
+
+.card.income-card {
+  border-bottom: 5px solid green;
+}
+
+.card.expense-card {
+  border-bottom: 5px solid red;
 }
 
 .text-center {
